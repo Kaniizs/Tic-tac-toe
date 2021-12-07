@@ -36,6 +36,10 @@ class Human_Player(Player):
 
 class Computer_Player(Player):
 
+    def __init__(self, val) -> None:
+        super().__init__(val)
+        self.name = 'Bot'
+
     def mark_value(self, board):
         """Put a mark in a random valid location for computer player"""
         loc = random.randrange(9)
