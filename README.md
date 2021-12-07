@@ -49,8 +49,8 @@ The requirement program for this project
 
 ## Code structure
 This program contains five python files and one CSV file to collect a data
-* [database.py](database.py) : module file that contain `savedata` class
+* [database.py](database.py) : module file that contain `Db` class
 * [Board.py](Board.py) : module file that contain `Board` class
 * [Game.py](Game.py) : Module file that contain `Game` class
-* [Player](player.py) : Module file that contain `Player`, `Human_Player` and `Computer Player` class
-* [main](main.py): Main file that used to run a main program
+* [Player.py](player.py) : Module file that contain `Player`, `Human_Player` and `Computer Player` class
+* [main.py](main.py): Main file that used to run a main program
