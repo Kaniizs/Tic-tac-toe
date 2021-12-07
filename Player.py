@@ -21,6 +21,17 @@ class Human_Player(Player):
         loc = int(turtle.textinput('Please choose loc form here:', ' 0 | 1 | 2\n 3 | 4 | 5\n 6 | 7 | 8'))
         if not board.mark_value(loc, self.val):
             self.mark_value(board)
+    
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, new_name):
+        if not isinstance(new_name, str):
+            raise TypeError('name must be a string')
+        self._name = new_name
+
 
 
 class Computer_Player(Player):
