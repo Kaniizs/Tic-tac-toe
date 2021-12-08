@@ -45,10 +45,10 @@ class Game:
 
             if is_break:
                 winner = self.player1 if is_break == self.player1.val else self.player2
-                print(f'{winner.name} won')
+                turtle.textinput(f'{winner.name}', 'won the game')
                 self.database.update_data(self.mode, self.player1.name, self.player2.name, winner.name)
                 break
 
             now_player = self.player2 if now_player == self.player1 else self.player1
         else:
-            print('Draw!')
+            turtle.textinput('This game is done', 'TIE!')
