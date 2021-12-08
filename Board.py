@@ -1,5 +1,5 @@
 import turtle
-from time import sleep
+
 class Board():
 
     def __init__(self):
